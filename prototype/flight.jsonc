@@ -1,0 +1,82 @@
+{
+    "FlightName": "JL809", //IATAコードによる便名（必須）
+    "DisplayName": "JL809", // 正式でないコードや便名を表示に使う場合（例:関西国際空港発着のスターフライヤー便における「MQ」表示）
+    "Operator": {
+        //コードを持たない小規模オペレーターを想定すべきか？
+        "IATA": "JL",
+        "ICAO": "JAL"
+    },
+    "CodeShare": [
+        {
+            "FlightName":"AA8458",
+            "Operator":{
+                "IATA":"AA",
+                "ICAO":"AAL"
+            }
+        },
+        {
+            "FlightName":"CI9909",
+            "Operator":{
+                "IATA":"CI",
+                "ICAO":"CAL"
+            }
+        },
+        {
+            "FlightName":"HA5404",
+            "Operator":{
+                "IATA":"HA",
+                "ICAO":"HAL"
+            }
+        }
+    ],
+    "Equipment": {
+        "Aircraft": "B788", //ICAOコード
+        "SeatConfiguration": "JL.E12", //航空会社によるシートコンフィグレーション名（任意）
+        "Class": [
+            {
+                "ClassCode": "C",
+                "Name": {
+                    "en": "Business",
+                    "ja": "ビジネスクラス"
+                },
+                "Service": {
+                    "Seat": "fullflat",
+                    "WiFi": true,
+                    "USB":true,
+                    "Outlet": true
+                }
+            },
+            {
+                "ClassCode": "Y",
+                "Name": {
+                    "en": "Business",
+                    "ja": "ビジネスクラス"
+                },
+                "Service": {
+                    "Seat": "normal",
+                    "WiFi": true,
+                    "USB":true,
+                    "Outlet": true
+                }
+            }
+        ]
+    },
+    "Origin": {
+        "IATA": "NRT",
+        "ICAO": "RJAA",
+        "Terminal": {
+            "en": "T2-South",
+            "ja": "T2南"
+        },
+        "Counter": {"en":"K,L,M,O,P,Q"}, //多言語対応すべきか？  
+        "Gate": "74"
+    },
+    "Destination": {
+        "IATA": "TPE",
+        "ICAO": "RCTP"
+    },
+    "OperationStatus": {
+        "TimeStatus": "ontime", //コード化したい
+        "SeatAvailabilty": "OK"
+    }
+}

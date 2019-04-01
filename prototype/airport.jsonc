@@ -1,0 +1,58 @@
+{
+  "IATA": "NRT",
+  "ICAO": "RJAA",
+  "Type": "airport", // "city" and so on
+  "Name": { //正式名称
+    "en": "Narita International Airport",
+    "ja": "成田空港",
+    "zh": "成田国际机场",
+    "zh-CN": "成田国际机场",
+    "zh-TW": "成田國際機場",
+    "ko": "나리타 국제공항"
+  },
+  "Alias": {
+    "en": "Narita Airport",
+    "ja": "成田空港",
+    "zh": "成田機場"
+  },
+  "City": {
+    "IATA": "TYO" //所属する都市コード
+  },
+  "Terminals": [
+    {
+      "Code":"T1",
+      "Name": {
+        "en": "Terminal1",
+        "ja": "第1ターミナル"
+      },
+      "OperationHours":{
+        "AllHours":false, //24時間営業かどうか
+        "OpeningHours":"06:00+09:00", //dummy
+        "ClosingHours":"22:00+09:00" //dummy
+      }
+    },
+    {
+      "Code":"T2",
+      "Name": {
+        "en": "Terminal2",
+        "ja": "第2ターミナル"
+      },
+      "OperationHours":{
+        "AllHours":false, //24時間営業かどうか
+        "OpeningHours":"06:00+09:00", //dummy
+        "ClosingHours":"22:00+09:00" //dummy
+      }
+    },
+    {
+      "Code":"T3",
+      "Name": {
+        "en": "Terminal3",
+        "ja": "第3ターミナル"
+      },
+      "OperationHours":{
+        "AllHours":true, //24時間営業かどうか
+      }
+    },
+
+  ]
+}
